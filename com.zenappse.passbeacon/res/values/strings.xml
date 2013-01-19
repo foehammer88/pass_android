@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PASS Beacon</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    
+	<!--     Main Activity -->
+	<string name="help_button">Help!</string>
+	<string name="alarm_status_text">Alarm</string>
+	<string name="alarm_off_toggle">Off</string>
+	<string name="alarm_on_toggle">On</string>
+	<color name="background_color">#ff000000</color>
+	<string name="debugText">debug</string>
+	<string name="contacts_text">Contacts</string>
+	
+
+</resources>
