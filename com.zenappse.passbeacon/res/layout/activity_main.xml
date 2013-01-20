@@ -4,15 +4,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity" >
 
-    <Button
-        android:id="@+id/bigRedButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:onClick="helpButton"
-        android:text="@string/help_button" />
-
     <ToggleButton
         android:id="@+id/toggleAlarmButton"
         android:layout_width="wrap_content"
@@ -41,5 +32,25 @@
         android:layout_marginBottom="28dp"
         android:layout_marginLeft="26dp"
         android:text="@string/debugText" />
+
+<!--     <Button -->
+<!--         android:id="@+id/bigRedButton" -->
+<!--         android:layout_width="wrap_content" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:layout_above="@+id/toggleAlarmButton" -->
+<!--         android:layout_centerHorizontal="true" -->
+<!--         android:onClick="helpButton" -->
+<!--         android:text="@string/help_button" /> -->
+
+    <ImageButton
+        android:id="@+id/bigRedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:onClick="helpButton"
+        android:contentDescription="@string/help_button"
+        android:src="@drawable/indicator_code_lock_point_area_red"
+        android:text="@string/help_button" />
 
 </RelativeLayout>

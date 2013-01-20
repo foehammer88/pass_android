@@ -8,6 +8,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
@@ -22,10 +23,10 @@ public class ContactsActivity extends Activity {
 	public void onCreate(Bundle savedInstanceState) {
 	    super.onCreate(savedInstanceState);
 	
-	    setContentView(R.layout.activity_main);
+	    setContentView(R.layout.activity_contacts);
     	ActionBar actionBar = getActionBar();
     	actionBar.setDisplayHomeAsUpEnabled(true);
-	    
+	    Log.d("Start Activity", "ContactActivity");
 	    // TODO Auto-generated method stub
 	}
 	
@@ -33,6 +34,9 @@ public class ContactsActivity extends Activity {
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.activity_main, menu);
+		menu.add(0, 2, 0, "Add Contact").setIcon(R.drawable.ic_menu_invite)
+        .setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM);
+		
 		return true;
 	}
 	
